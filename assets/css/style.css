@@ -47,8 +47,6 @@ header a {
     color: inherit;
 }
 
-
-
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -215,6 +213,13 @@ main {
     color: #3a3a3a;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
     /*Heather*/
@@ -273,6 +278,11 @@ main {
          text-align: end;
          align-self: flex-end;
      }
+
+      /* Gallery */
+    #photos {
+        column-count: 3;
+    }
  
 }
 
